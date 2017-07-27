@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F51DA78C1F1D5343008EBBAB"
-               BuildableName = "ex00.app"
-               BlueprintName = "ex00"
-               ReferencedContainer = "container:ex00.xcodeproj">
+               BlueprintIdentifier = "F51DA7AE1F1E035E008EBBAB"
+               BuildableName = "ex01.app"
+               BlueprintName = "ex01"
+               ReferencedContainer = "container:ex01.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F51DA78C1F1D5343008EBBAB"
-            BuildableName = "ex00.app"
-            BlueprintName = "ex00"
-            ReferencedContainer = "container:ex00.xcodeproj">
+            BlueprintIdentifier = "F51DA7AE1F1E035E008EBBAB"
+            BuildableName = "ex01.app"
+            BlueprintName = "ex01"
+            ReferencedContainer = "container:ex01.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F51DA78C1F1D5343008EBBAB"
-            BuildableName = "ex00.app"
-            BlueprintName = "ex00"
-            ReferencedContainer = "container:ex00.xcodeproj">
+            BlueprintIdentifier = "F51DA7AE1F1E035E008EBBAB"
+            BuildableName = "ex01.app"
+            BlueprintName = "ex01"
+            ReferencedContainer = "container:ex01.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F51DA78C1F1D5343008EBBAB"
-            BuildableName = "ex00.app"
-            BlueprintName = "ex00"
-            ReferencedContainer = "container:ex00.xcodeproj">
+            BlueprintIdentifier = "F51DA7AE1F1E035E008EBBAB"
+            BuildableName = "ex01.app"
+            BlueprintName = "ex01"
+            ReferencedContainer = "container:ex01.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
