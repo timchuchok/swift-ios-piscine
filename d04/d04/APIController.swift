@@ -24,7 +24,7 @@ class APIController {
         
         let req = string.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         let url = URL(string: "https://api.twitter.com/1.1/search/tweets.json?q=\(req)&lang=fr&count=100")
-        print(url)
+        print(url!)
         var urlRequest = URLRequest(url: url!)
         urlRequest.httpMethod = "GET"
         urlRequest.addValue("Bearer \(self.token)", forHTTPHeaderField: "Authorization")
@@ -32,7 +32,7 @@ class APIController {
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             //print(response!)
             if let err = error {
-                self.delegate?.error(error: err as NSError)
+                self.delegate?.error(err as NSError)
             } 
             else if let d = data {
                 do {
@@ -55,7 +55,7 @@ class APIController {
                     }
                 }
                 catch (let err) {
-                    self.delegate?.error(error: err as NSError)
+                    self.delegate?.error(err as NSError)
                 }
             }
         })

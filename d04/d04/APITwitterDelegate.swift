@@ -12,6 +12,6 @@ protocol APITwitterDelegate : class {
     
     func takeTweets(tweets: [Tweet])
     
-    func error(error: NSError)
+    func error(_ error: NSError)
     
 }

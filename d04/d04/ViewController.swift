@@ -57,7 +57,7 @@ class ViewController : UIViewController, APITwitterDelegate, UITableViewDataSour
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             //print(response!)
             if let err = error {
-                self.error(error: err as NSError)
+                self.error(err as NSError)
             }
             else if let d = data {
                 do {
@@ -69,14 +69,14 @@ class ViewController : UIViewController, APITwitterDelegate, UITableViewDataSour
                     }
                 }
                 catch (let err) {
-                    self.error(error: err as NSError)
+                    self.error(err as NSError)
                 }
             }
         })
         task.resume()
     }
     
-    func error(error: NSError) {
+    func error(_ error: NSError) {
         //print("Oops, some error handling")
         let alert = UIAlertController(title: "Oops", message: "Something went wrong", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Error", style: .default, handler: { (alert: UIAlertAction) in self.tokenRequest(callback: self.runApi)}))
