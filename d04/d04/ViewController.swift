@@ -29,6 +29,7 @@ class ViewController : UIViewController, APITwitterDelegate, UITableViewDataSour
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.text != nil {
+            self.requestTextField.endEditing(true)
             apiController?.performRequest(withString: textField.text!)
             return true
         }

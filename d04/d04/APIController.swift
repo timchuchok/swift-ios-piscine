@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class APIController {
     
@@ -29,6 +30,10 @@ class APIController {
         urlRequest.httpMethod = "GET"
         urlRequest.addValue("Bearer \(self.token)", forHTTPHeaderField: "Authorization")
         
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        }
+
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             //print(response!)
             if let err = error {
@@ -51,6 +56,7 @@ class APIController {
                         }
                         DispatchQueue.main.async {
                             self.delegate?.takeTweets(tweets: twts)
+                            UIApplication.shared.isNetworkActivityIndicatorVisible = false
                         }
                     }
                 }
