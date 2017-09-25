@@ -80,7 +80,8 @@ class ViewController : UIViewController, APITwitterDelegate, UITableViewDataSour
     func error(_ error: NSError) {
         //print("Oops, some error handling")
         let alert = UIAlertController(title: "Oops", message: "Something went wrong", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Error", style: .default, handler: { (alert: UIAlertAction) in self.tokenRequest(callback: self.runApi)}))
+        alert.addAction(UIAlertAction(title: "Try again", style: .default, handler: { (alert: UIAlertAction) in self.tokenRequest(callback: self.runApi)}))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         self.present(alert, animated: false, completion: nil)
     }
     
