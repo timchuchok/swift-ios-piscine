@@ -1,0 +1,6 @@
+framework module vtymchen2017 {
+  umbrella header "vtymchen2017-umbrella.h"
+
+  export *
+  module * { export * }
+}
