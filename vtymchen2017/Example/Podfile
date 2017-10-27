@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'vtymchen2017_Example' do
+  pod 'vtymchen2017', :path => '../'
+
+  target 'vtymchen2017_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
